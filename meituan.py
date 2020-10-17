@@ -12,7 +12,7 @@ header = {
     "Referer": "https://www.meituan.com/"
 }
 
-conn = pymysql.connect("localhost", "root", "lj910729", "SHIYI")
+conn = pymysql.connect("localhost", "root", "", "SHIYI")
 cursor = conn.cursor()
 
 df = pd.read_csv('new_data.csv')
