@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 import pandas as pd
 import pymysql
 
-conn = pymysql.connect("localhost", "root", "lj910729", "SHIYI")
+conn = pymysql.connect("localhost", "root", "xxxxx", "SHIYI")
 cursor = conn.cursor()
 
 headers = {
