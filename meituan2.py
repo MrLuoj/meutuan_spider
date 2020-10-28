@@ -14,6 +14,33 @@ headers = {
     "Referer": "https://www.meituan.com/"
 }
 
+# 通过User-Agent来控制访问
+# def get_agent():
+#     agents = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.80 Safari/537.36",
+#              ....,
+#              ....,}
+#     fakeheader = {}
+#     fakeheader["User-Agent"] = agents[random.randint(0, len(agents))]
+#     return fakeheader
+
+# def get_html(url):
+#     try:
+#         r = requests.get(url, timeout=30, headers=get_agent())
+#         r.raise_for_status
+#         r.encoding = r.apparent_encoding
+#         return r.status_code
+#     except:
+#         return "Something Wrong!"
+        
+# IP代理池
+# def get_proxy():
+#     proxy = ["http://116.211.143.11:80",
+#             ...,]
+#     fakepxs = {}
+#     fakepxs['http'] = proxy[random.randint(0, len(proxy))]
+#     return fakepxs
+
+
 url = "https://www.meituan.com/xiuxianyule/"
 csv_file_path = './kdw_comp_manual_relation_info.csv'
 
